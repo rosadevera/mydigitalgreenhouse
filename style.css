@@ -7,6 +7,18 @@
 
 body {
     background-color: #f7efe0;
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
 }
 
 #navbar {
@@ -75,4 +87,10 @@ a:hover {
 img {
     margin-left: 10%;
 
+}
+
+li {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10pt;
+    line-height: 16pt;
 }
