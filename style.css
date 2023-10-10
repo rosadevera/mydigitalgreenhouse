@@ -5,7 +5,10 @@
     box-sizing: border-box;       
 }
 
+html, body { height: 4800px }
+
 body {
+    background-repeat: no-repeat;
     background-color: #f7efe0;
     animation: fadeInAnimation ease 2s;
     animation-iteration-count: 1;
@@ -198,7 +201,19 @@ li {
 }
 
 .bambi2sticky {
-    position: sticky;
-    top: 200px;
-    left:-1000 px;
+    position: absolute;
+    top:800px;
+    left: -150px;
+}
+
+.rosa2sticky {
+    position: absolute;
+    top:1500px;
+    right: -150px;
+}
+
+.pothos2sticky {
+    position: absolute;
+    top:2300px;
+    left: -150px;
 }
