@@ -21,49 +21,15 @@ body {
      }
 }
 
-#navbar {
-    padding:30px;
-    float: left;
-    width: 17%;
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 10pt;
-    line-height: 16pt;
-}
-
-.plant {
-    float: left;
-    width: 20%;
-}
-
-.writtenentries {
-
-}
-
-.columnleft {
-    padding-left: 200px;
-    padding-bottom: 100px;
-    width: 40%;
-    text-align: left;
-}
-
-.columnright {
-    padding-left: 200px;
-    padding-bottom: 100px;
-    text-align: flex;
-    width: 50%;
-}
-
 h1 {
     font-family: 'JetBrains Mono', monospace;
-    font-size: 20pt;
+    font-size: 24pt;
     font-weight: 700;
     padding-bottom: 14px;
 }
 
 p {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 10pt;
-    line-height: 16pt;
+    
 }
 
 a {
@@ -76,6 +42,71 @@ a:hover {
     font-weight: 700;
     transition:cubic-bezier(0.165, 0.84, 0.44, 1)0.5s;
     cursor: pointer;
+}
+
+.imghover img:hover {transform:scale(1.25);
+}
+
+img{
+    transition: transform .2s;
+}
+
+#navbar {
+    padding:20px;
+    position:fixed;
+    top:1vh;
+    left:1vw;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10pt;
+    line-height: 16pt;
+    cursor: pointer;
+}
+
+.bambi {
+    position:fixed;
+    top:1vh;
+    left:5vw;
+}
+
+.pilea {
+    position:fixed;
+    top:1vh;
+}
+
+.rosa {
+    position:fixed;
+    top:1vh;
+    left:3vw
+}
+
+.pothos {
+    position:fixed;
+    top:4vh;
+    left:3vw
+}
+
+.plantinfo {
+    position:absolute;
+    top: 25vh;
+    left: 60vw;
+    width: 30vw;
+}
+
+.writtenentries {
+    position:relative;
+    top: 95vh;
+    left: 60vw;
+    width: 30vw;
+    padding-bottom: 500px;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 300;
+    font-size: 14pt;
+    line-height: 16pt;
+}
+
+.list {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 300;
 }
 
 .currentpage {
@@ -91,6 +122,83 @@ img {
 
 li {
     font-family: 'JetBrains Mono', monospace;
-    font-size: 10pt;
-    line-height: 16pt;
+    font-size: 14pt;
+    line-height: 20pt;
+}
+
+.welcome {
+    position:absolute;
+    margin-left:47vw;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12pt;
+    line-height: 800px;
+}
+
+.pixelgreenhouse {
+    position:fixed;
+    top:-15vh;
+    left:15vw;
+    image-rendering: -webkit-crisp-edges;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+    -ms-interpolation-mode: nearest-neighbor;
+}
+
+.bambigreenhouse {
+    position:fixed;
+    top:50vh;
+    left:20vw;
+}
+
+.pileagreenhouse {
+    position:fixed;
+    top:49vh;
+    left:30vw;
+}
+
+.rosagreenhouse {
+    position:fixed;
+    top:60vh;
+    left:50vw;
+}
+
+.pothosgreenhouse {
+    position:fixed;
+    top:30vh;
+    left:44vw;
+}
+
+.wateringcangreenhouse {
+    position:fixed;
+    top:42vh;
+    left:66vw;
+    image-rendering: -webkit-crisp-edges;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+    -ms-interpolation-mode: nearest-neighbor;
+}
+
+.scissorsgreenhouse {
+    position:fixed;
+    top:72vh;
+    left:42vw;
+    image-rendering: -webkit-crisp-edges;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+    -ms-interpolation-mode: nearest-neighbor;
+}
+
+.fertilizergreenhouse {
+    position:fixed;
+    top:64vh;
+    left:63vw;
+}
+
+.bambi2sticky {
+    position: sticky;
+    top: 200px;
+    left:-1000 px;
 }
