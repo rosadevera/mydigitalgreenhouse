@@ -200,6 +200,13 @@ li {
     left:63vw;
 }
 
+/* .flexcontainer {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+} */
+
 .bambi2sticky {
     position: absolute;
     top:800px;
@@ -216,4 +223,41 @@ li {
     position: absolute;
     top:2300px;
     left: -150px;
+}
+
+.bambigrow1 {
+    position:sticky;
+    top: 0;
+    float: left;
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+}
+
+.plantentries {
+    display: flex;
+}
+
+.parent {
+    top:20vh;
+    display: flex;
+    flex-direction: row; 
+    margin: auto;
+    width: 50vh;
+    height:70vh;
+    background-color:#7BA362
+}
+
+.child1 {
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+}
+
+.child2 {
+    height: 100vh; 
+    display: flex;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 300;
+    font-size: 10pt;
+    line-height: 9pt;
 }
