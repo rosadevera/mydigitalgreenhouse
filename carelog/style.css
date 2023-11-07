@@ -1,0 +1,312 @@
+
+*{
+    margin: 0%;
+    padding: 0px;
+    box-sizing: border-box;       
+}
+
+html, body { height: 4800px }
+
+p{
+    line-height: 20pt;
+}
+
+h1 {
+    line-height: 20pt;
+    margin-bottom: 20pt;
+}
+
+@font-face {
+    font-family: Director-regular;
+    src: url(../Director-Regular.otf);
+}
+
+@font-face {
+    font-family: Director-bold;
+    src: url(../Director-Bold.otf);
+}
+
+@font-face {
+    font-family: Standard-book;
+    src: url(../standard-book.otf);
+}
+
+body {
+    background-repeat: no-repeat;
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+a:hover {
+    color:#ffffff;
+    transition:cubic-bezier(0.165, 0.84, 0.44, 1)0.5s;
+    cursor: pointer;
+} 
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.navcontainer {
+    position:fixed;
+    top:2vh;
+    left:3vw;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: fit-content;
+    align-items: left;
+    /* border: 1px solid black; */
+}
+
+.child1{
+    margin-top: 8vh;
+    margin-bottom: 30px;
+}
+
+.buttoncarelog {
+    border: 1px solid black;
+    margin-bottom: 20px;
+    font-family: Director-regular;
+    font-size: 10pt;
+    color:#ffffff;
+    border: 1px solid #7BA362;
+    background: #7BA362;
+    cursor: pointer;
+    box-shadow: 0 0 15px #7BA362;
+    text-align: center;
+    padding: 10px;
+    width:fit-content;
+    transform: rotate(8deg);
+    -webkit-animation: shake 3s ease-in-out infinite alternate;
+}
+
+
+.buttonflowerfield {
+    border: 1px solid black;
+    margin-bottom: 20px;
+    font-family: Director-regular;
+    font-size: 10pt;
+    text-align: center;
+    padding: 10px;
+    width:fit-content;
+    transform: rotate(-4deg);
+}
+
+.buttonflowerfield:hover {
+    transition: all ease-out 0.19s cubic-bezier(0.17, 0.67, 0.83, 0.67); 
+    transform: translateY(-2.5px);
+    color:#ffffff;
+    border: 1px solid #7BA362;
+    background: #7BA362;
+    cursor: pointer;
+    box-shadow: 0 0 15px #7BA362;
+    -webkit-animation: shake .75s ease-in-out infinite alternate;
+}
+
+.buttonback {
+    border: 1px solid black;
+    margin-bottom: 70px;
+    font-family: Director-regular;
+    font-size: 10pt;
+    text-align: center;
+    padding: 10px;
+    width:fit-content;
+    transform: rotate(-4deg);
+}
+
+.buttonback:hover {
+    transition: all ease-out 0.19s cubic-bezier(0.17, 0.67, 0.83, 0.67); 
+    transform: translateY(-2.5px);
+    color:#ffffff;
+    border: 1px solid #7BA362;
+    background: #7BA362;
+    cursor: pointer;
+    box-shadow: 0 0 15px #7BA362;
+    -webkit-animation: shake .75s ease-in-out infinite alternate;
+}
+
+.buttonecosystem {
+    border: 1px solid black;
+    margin-bottom: 20px;
+    font-family: Director-regular;
+    font-size: 10pt;
+    text-align: center;
+    padding: 10px;
+    width:fit-content;
+    transform: rotate(3deg);
+}
+
+.buttonecosystem:hover {
+    transition: all ease-out 0.19s cubic-bezier(0.17, 0.67, 0.83, 0.67); 
+    transform: translateY(-2.5px);
+    color:#ffffff;
+    border: 1px solid #7BA362;
+    background: #7BA362;
+    cursor: pointer;
+    box-shadow: 0 0 15px #7BA362;
+    -webkit-animation: shake .75s ease-in-out infinite alternate;
+}
+
+
+.flower {
+    position: absolute;
+    font-size: 40pt;
+    color: #7BA362;
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+
+@-moz-keyframes spin { 
+    100% { -moz-transform: rotate(360deg); } 
+}
+@-webkit-keyframes spin { 
+    100% { -webkit-transform: rotate(360deg); } 
+}
+@keyframes spin { 
+    100% { 
+        -webkit-transform: rotate(360deg); 
+        transform:rotate(360deg); 
+    } 
+}
+
+@-webkit-keyframes shake {
+    from {
+        -webkit-transform: rotate(5deg);
+    }
+    to {
+        -webkit-transform: rotate(-5deg);
+        -webkit-transform-origin: center center;
+    }
+  }
+
+.currentpage {
+    color: #7BA362;
+    font-family: Director-bold;
+    font-size: 10pt;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid #7BA362; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #7BA362; }
+  }
+
+.musicnote {
+    position: fixed;
+    bottom: 2vh;
+    left:2vw;
+    font-size: 30pt;
+}
+
+.fieldcontainer {
+    position: fixed;
+    top: 9vh;
+    left:30vw;
+    flex-direction: column;
+    width:60vw;
+    height: fit-content;
+    /* border: 1px solid black; */
+}
+
+.threecolumnflex { 
+    position:absolute;
+    top: 20vh;
+    left: 25vw;
+    width: 65vw;
+    display: flex; 
+    flex-direction: row; 
+    padding:20px;
+    margin:auto;
+    /* border: 1px solid black; */
+} 
+
+.child2 {
+    flex-grow: 1;
+    align-items: center;
+    border: 1px solid black;
+    padding:20px;
+    margin: 25px;
+    justify-content:space-between;
+    transform: rotate(3deg);
+}
+
+.child3 {
+    flex-grow: 1;
+    align-items: center;
+    border: 1px solid black;
+    padding:20px;
+    margin: 25px;
+    justify-content:space-between;
+    transform: rotate(-5deg);
+}
+
+.child4 {
+    flex-grow: 1;
+    align-items: center;
+    border: 1px solid black;
+    padding:20px;
+    margin: 25px;
+    justify-content:space-between;
+    transform: rotate(2deg);
+}
+
+.pixelicon {
+    width: 100%;
+    margin: auto; 
+    padding:10px;
+}
+
+.notifcations {
+    text-align: center;
+    padding:5px;
+    font-family: Standard-book;
+    font-size: 8pt;
+    flex-direction: column;
+    border: 1px solid black;
+    transition: all ease-out 0.5s cubic-bezier(0.17, 0.67, 0.83, 0.67); 
+}
+
+.notifcations:hover {
+    color: #7BA362;
+    border: 1px solid #7BA362;
+    box-shadow: 0 0 5px #7BA362;
+    text-shadow: 0px 0px 5px #7BA362;
+    transition: all ease-out 0.5s cubic-bezier(0.17, 0.67, 0.83, 0.67); 
+}
+
+.date{
+    font-family: Director-bold;
+    font-size: 8pt;
+}
+
+.date:hover {
+    color: #7BA362;
+    text-shadow: 0px 0px 5px #7BA362;
+}
