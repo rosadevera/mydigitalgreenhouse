@@ -1,13 +1,18 @@
-// document.addEventListener('DOMContentLoaded', function () {
-//     const flowerbox = document.querySelector('.flowerbox');
+$("document").ready(function() {
 
-//     flowerbox.addEventListener('mouseover', () => {
-//         flowerbox.classList.add('hovered');
-//     });
+    $('.flowerbox').on('mouseenter',function(){
+        $(this).animate({'color':'#ffaf53','color':'#e3175e','color':'#f4b3ff'},3000,'linear');
+        playHoverSound();
+    });
 
-//     flowerbox.addEventListener('mouseout', () => {
-//         setTimeout(() => {
-//             flowerbox.classList.remove('hovered');
-//         }, 9000);
-//     });
-// });
+    function playHoverSound() {
+        const audio = document.getElementById('hoverSound');
+        if (audio) {
+          audio.currentTime = 0; // Rewind to the beginning (in case it's already playing)
+          audio.play();
+        }
+    }
+
+});
+
+// ,'color':'#f7d7eb'
