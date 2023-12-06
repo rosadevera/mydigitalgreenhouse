@@ -305,7 +305,7 @@ a {
 .flowerbox {
     height: 50px;
     width: 50px;
-    color: #f7d7eb;
+    color: #dfd8d8;
     font-size: 30pt;
     display:flex;
     transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.25s;

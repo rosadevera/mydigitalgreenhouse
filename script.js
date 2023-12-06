@@ -9,6 +9,7 @@ $("document").ready(function() {
         $(".scissorsgreenhouse").draggable();
         $(".fertilizergreenhouse").draggable();
         $(".sonnygreenhouse").draggable();
+        $(".pixelgreenhouse").draggable();
       } );
 
 });

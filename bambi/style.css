@@ -305,13 +305,6 @@ img{
     /* background-color:coral; */
 }
 
-.bambigrow1 {
-    position: absolute;
-    top:900px;
-    animation: fadeInAnimation ease 2s;
-    animation-iteration-count: 1;
-}
-
 .bambigrow2 {
     position: relative;
     top:1500px;
@@ -329,3 +322,37 @@ img{
     float: right;
 }
 
+#popup-image {
+    position: fixed;
+    top:10vh;
+    transform: translate(-20%);
+    opacity: 0;
+    transition: opacity 0.25xs ease-in-out;
+  }
+
+  #popup-image2 {
+    position: fixed;
+    top:0vh;
+    float: right;
+    transform: translate(160%,-30%);
+    opacity: 0;
+    transition: opacity 0.25xs ease-in-out;
+  }
+
+  #popup-image3 {
+    position: fixed;
+    bottom:0vh;
+    left:20vw;
+    transform: translate(0%,50%);
+    opacity: 0;
+    transition: opacity 0.25xs ease-in-out;
+  }
+
+  #popup-image4 {
+    position: fixed;
+    right:0vw;
+    top:35vh;
+    /* transform: translate(0%,50%); */
+    opacity: 0;
+    transition: opacity 0.25xs ease-in-out;
+  }

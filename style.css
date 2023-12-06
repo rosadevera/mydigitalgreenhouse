@@ -5,7 +5,7 @@
     box-sizing: border-box;       
 }
 
-html, body { height: 4800px }
+/* html, body { height: 4800px } */
 
 @font-face {
     font-family: Director-regular;
@@ -83,6 +83,7 @@ img{
 .buttoncarelog {
     transition: all ease-in cubic-bezier(0.645, 0.045, 0.355, 1) 1s;
     border: 1px solid black;
+    background-color: white;
     color: black;
     text-decoration: none;
     margin-bottom: 20px;
@@ -109,6 +110,7 @@ img{
 .buttonflowerfield {
     border: 1px solid black;
     margin-bottom: 20px;
+    background-color: white;
     font-family: Director-regular;
     font-size: 10pt;
     text-align: center;
@@ -131,6 +133,7 @@ img{
 .buttonecosystem {
     border: 1px solid black;
     margin-bottom: 20px;
+    background-color: white;
     font-family: Director-regular;
     font-size: 10pt;
     text-align: center;
@@ -186,6 +189,8 @@ img{
 .currentpage {
     color: #7BA362;
     font-family: Director-bold;
+    padding: 10px;
+    background-color: white;
     font-size: 10pt;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     border-right: .15em solid #7BA362; /* The typwriter cursor */
@@ -223,49 +228,50 @@ img {
 
 .pixelgreenhouse {
     position:fixed;
-    top:-15vh;
-    left:15vw;
+    top:-12vh;
+    left:-7vw;
     image-rendering: -webkit-crisp-edges;
     image-rendering: -moz-crisp-edges;
     image-rendering: crisp-edges;
     image-rendering: pixelated;
     -ms-interpolation-mode: nearest-neighbor;
+    cursor:grab;
 }
 
 .bambigreenhouse {
-    position:fixed;
-    top:50vh;
-    left:20vw;
+    position:absolute;
+    top:500px;
+    left:390px
 }
 
 .pileagreenhouse {
-    position:fixed;
-    top:49vh;
-    left:30vw;
+    position:absolute;
+    top:490px;
+    left:500px
 }
 
 .rosagreenhouse {
-    position:fixed;
-    top:60vh;
-    left:50vw;
+    position:absolute;
+    top:570px;
+    left:770px
 }
 
 .pothosgreenhouse {
-    position:fixed;
-    top:30vh;
-    left:44vw;
+    position:absolute;
+    top:355px;
+    left:696px
 }
 
 .sonnygreenhouse {
-    position:fixed;
-    top:37vh;
-    left:67vw;
+    position:absolute;
+    top:410px;
+    left:990px
 }
 
 .wateringcangreenhouse {
-    position:fixed;
-    top:35vh;
-    left:60vw;
+    position:absolute;
+    top:400px;
+    left:900px;
     image-rendering: -webkit-crisp-edges;
     image-rendering: -moz-crisp-edges;
     image-rendering: crisp-edges;
@@ -274,9 +280,9 @@ img {
 }
 
 .scissorsgreenhouse {
-    position:fixed;
-    top:72vh;
-    left:42vw;
+    position:absolute;
+    top:82vh;
+    left:45vw;
     image-rendering: -webkit-crisp-edges;
     image-rendering: -moz-crisp-edges;
     image-rendering: crisp-edges;
@@ -285,7 +291,47 @@ img {
 }
 
 .fertilizergreenhouse {
-    position:fixed;
-    top:66vh;
-    left:65vw;
+    position:absolute;
+    top:600px;
+    left:960px;
+}
+
+.bookgreenhouse {
+    position:absolute;
+    top:684px;
+    left:110px
+}
+
+.bookgreenhouse:hover {
+    transform:scale(1.10);
+    filter: drop-shadow(0px 0px 10px #7BA362);
+}
+
+.cloudsgreenhouse {
+    position:absolute;
+    top:0px;
+    left:1242px
+}
+
+.cloudsgreenhouse:hover {
+    transform:scale(1.05);
+    filter: drop-shadow(0px 0px 12px #98c9ec);
+}
+
+.flowerfield {
+    position:absolute;
+    top:675px;
+    left:1340px
+}
+
+.flowerfield:hover {
+    transform:scale(1.04);
+    filter: drop-shadow(0px 0px 15px #f4b3ff);
+}
+
+
+.pagecontainer {
+    position: fixed;
+    width: 100vw;
+    height:100vh;
 }

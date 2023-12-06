@@ -5,8 +5,6 @@
     box-sizing: border-box;       
 }
 
-html, body { height: 4800px }
-
 p{
     line-height: 20pt;
 }
@@ -238,10 +236,11 @@ a {
 .threecolumnflex { 
     position:absolute;
     top: 20vh;
-    left: 25vw;
+    left: 20vw;
     width: 65vw;
     display: flex; 
     flex-direction: row; 
+    justify-content:center;
     padding:20px;
     margin:auto;
     /* border: 1px solid black; */
@@ -253,8 +252,18 @@ a {
     border: 1px solid black;
     padding:20px;
     margin: 25px;
-    justify-content:space-between;
+    justify-content:center;
     transform: rotate(3deg);
+    transition: transform .15s linear;
+}
+
+.child2:hover {
+    transform: scale(1.25);
+    position:relative;
+    z-index:5;
+    cursor: pointer;
+    box-shadow: 0 0 15px #6bb8fb;
+    /* -webkit-animation: shake .75s ease-in-out infinite alternate; */
 }
 
 .child3 {
@@ -263,8 +272,18 @@ a {
     border: 1px solid black;
     padding:20px;
     margin: 25px;
-    justify-content:space-between;
+    justify-content:center;
     transform: rotate(-5deg);
+    transition: transform .15s linear;
+}
+
+.child3:hover {
+    transform: scale(1.25);
+    position:relative;
+    z-index:5;
+    cursor: pointer;
+    box-shadow: 0 0 15px #737373;
+    /* -webkit-animation: shake .75s ease-in-out infinite alternate; */
 }
 
 .child4 {
@@ -275,30 +294,75 @@ a {
     margin: 25px;
     justify-content:space-between;
     transform: rotate(2deg);
+    transition: transform .15s linear;
+}
+
+.child4:hover {
+    transform: scale(1.25);
+    position:relative;
+    z-index:5;
+    cursor: pointer;
+    box-shadow: 0 0 15px #7BA362;
+    /* -webkit-animation: shake .75s ease-in-out infinite alternate; */
 }
 
 .pixelicon {
     width: 100%;
-    margin: auto; 
+    /* margin: auto;  */
     padding:10px;
 }
 
-.notifcations {
+.notifcations1 {
     text-align: center;
     padding:5px;
     font-family: Standard-book;
     font-size: 8pt;
     flex-direction: column;
     border: 1px solid black;
-    transition: all ease-out 0.5s cubic-bezier(0.17, 0.67, 0.83, 0.67); 
+    transition: transform .5s linear;
 }
 
-.notifcations:hover {
-    color: #7BA362;
+.notifcations1:hover {
+    background-color: #6bb8fb;
+    color: white;
+    border: 1px solid #6bb8fb;
+    box-shadow: 0 0 10px #6bb8fb;
+    text-shadow: 0px 0px 5px #6bb8fb;
+}
+
+.notifcations2 {
+    text-align: center;
+    padding:5px;
+    font-family: Standard-book;
+    font-size: 8pt;
+    flex-direction: column;
+    border: 1px solid black;
+    transition: transform .5s linear;
+}
+
+.notifcations2:hover {
+    background-color: #737373;
+    color: white;
+    border: 1px solid #737373;;
+    box-shadow: 0 0 10px #737373;;
+    text-shadow: 0px 0px 5px #737373;
+}
+
+.notifcations3 {
+    text-align: center;
+    padding:5px;
+    font-family: Standard-book;
+    font-size: 8pt;
+    flex-direction: column;
+    border: 1px solid black;
+    transition: transform .5s linear;
+}
+
+.notifcations3:hover {
+    background-color: #7BA362;
+    color:white;
     border: 1px solid #7BA362;
-    box-shadow: 0 0 5px #7BA362;
-    text-shadow: 0px 0px 5px #7BA362;
-    transition: all ease-out 0.5s cubic-bezier(0.17, 0.67, 0.83, 0.67); 
+    box-shadow: 0 0 10px #7BA362;
 }
 
 .date{
@@ -306,7 +370,3 @@ a {
     font-size: 8pt;
 }
 
-.date:hover {
-    color: #7BA362;
-    text-shadow: 0px 0px 5px #7BA362;
-}
