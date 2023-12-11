@@ -194,6 +194,7 @@ img{
 .currentpage {
     color: #7BA362;
     font-family: Director-bold;
+    padding: 10px;
     font-size: 10pt;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     border-right: .15em solid #7BA362; /* The typwriter cursor */
@@ -222,6 +223,23 @@ img{
     bottom: 2vh;
     left:2vw;
     font-size: 30pt;
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1)0.5s;
+    /* background-color: white; */
+}
+
+.musicnote:hover {
+    transform:scale(1.05);
+    filter: drop-shadow(0px 0px 2px #616161);
+    cursor: pointer;
+}
+
+.musicnote.paused {
+    position: fixed;
+    bottom: 2vh;
+    left:2vw;
+    font-size: 30pt;
+    color: #c7c7c7;
+    /* background-color: white; */
 }
 
 

@@ -18,6 +18,15 @@
     <script src="script.js"></script>
 </head>
 <body>
+
+    <audio autoplay preload='auto' loop id="myAudio">
+        <source src="bgm/animalcrossing.mp3" type="audio/mp3" >
+    </audio>
+
+    <!-- <script src="sharedScript.js"></script> -->
+
+    <!-- --- -->
+
     <div class="pagecontainer">
         <div class="pixelgreenhouse">
             <img src="images/entire map.png" width="1900" height="auto">
@@ -34,8 +43,9 @@
             </div>
 
             <a href="carelog/carelog.html"><img class="bookgreenhouse" src="images/book.png" width="132" height="auto"></a>
-            <a href="---"><img class="cloudsgreenhouse" src="images/clouds.png" width="480" height="auto"></a>
-            <a href="flowerfield/flowerfield.html"><img class="flowerfield" src="images/flower field.png" width="590" height="auto"></a>
+            <a href="cloudwatching/cloudwatching.html"><img class="cloudsgreenhouse" src="images/clouds.png" width="480" height="auto"></a>
+            <a href="flowerfield/flowerfield.html"><img class="flowerfield" src="images/flower field.png" width="550" height="auto"></a>
+            <a href="ecosystem/ecosystem.html"><img class="ecosystemgreenhouse" src="images/ecosystem.png" width="60" height="auto"></a>
 
         </div>
     
@@ -52,11 +62,12 @@
             <!-- <div class="buttoncarelog"><a href="carelog/carelog.html"><span class="text">Care Log</span></a></div>
             <div class="buttonflowerfield"><a href="flowerfield/flowerfield.html"><span class="text">Flower Field</span></a></div>
             <div class="buttonecosystem"><a href="ecosystem/ecosystem.html"><span class="text">Ecosystem</span></a></div> -->
-    </div>
+    </div> 
 
-    <div class="musicnote">
+    <div class="musicnote" id="musicToggle">
         ♫
     </div>
+
 
 </body>
 </html>

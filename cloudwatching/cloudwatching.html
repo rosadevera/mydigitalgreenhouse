@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Digital Greenhouse</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Nanum+Myeongjo:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="script.js"></script>
+    <style>
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+    body {
+        background-color: #4f9dff;
+        background: radial-gradient(#4f9dff 0%, #a3ccff 50%, #5391dc 100%);
+        background-repeat: no-repeat;
+        background-size: 400% 400%;
+        animation: gradient 30s ease infinite;
+        min-height: 100vh;
+        padding-top: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    </style>
+</head>
+<body>
+
+    <audio autoplay preload='auto' loop id="myAudio">
+        <source src="../bgm/nature.mp3" type="audio/mp3" >
+    </audio>
+
+    <div class="all">
+        <div class="moving-text text1">
+            <img src="images/cloud2.png" height="100px" width="auto">
+        </div>
+        <div class="moving-text text5">
+            <img src="images/cloud1.png" height="160px" width="auto">
+        </div>
+        <div class="moving-text text6">i wish i was a cloud...</div>
+        <div class="moving-text text2">it will be okay :&rpar;</div>
+        <div class="moving-text text3">
+            <img src="images/cloud6.png" height="300px" width="auto">
+        </div>
+        <div class="moving-text text4">let your mind wander </div>
+        <div class="moving-text text22"> life ebbs & flows...</div>
+        <div class="moving-text text7">
+            <img src="images/cloud4.png" height="600px" width="auto">
+        </div>
+        <div class="moving-text text9">
+            <img src="images/cloud3.png" height="70px" width="auto">
+        </div>
+        <div class="moving-text text8">
+            <img src="images/cloud7.png" height="600px" width="auto">
+        </div>
+    </div>
+
+    <div class="navcontainer">
+        <div class="flower">✿</div>
+        <div class="child1">
+            <div class="buttonback"><a href="../greenhouse.html"><span class="text">← BACK</span></a></div>
+        </div>
+    </div>
+
+    <div class="flexbox">
+        <div class="quotebox">
+            <div class="quote">
+                Let your thoughts and worries all just float away...
+            </div>
+        </div>
+    </div>
+
+    <div class="musicnote" id="musicToggle">
+        ♫
+    </div>
+
+    <div id="customMovingTextContainer"></div>
+
+
+    <div class="entry">
+    <form id="userInputForm">
+        <label for="userText">what's on your mind? </label>
+        <input type="text" id="userText" name="userText">
+        <button type="button" onclick="addUserText()">release</button>
+    </form>
+    </div>
+
+</body>
+</html>

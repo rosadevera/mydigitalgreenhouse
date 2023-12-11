@@ -9,8 +9,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Nanum+Myeongjo:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="script.js"></script>
 </head>
 <body>
+
+    <audio autoplay preload='auto' loop id="myAudio">
+        <source src="../bgm/nature.mp3" type="audio/mp3" >
+    </audio>
 
     <div class="navcontainer">
         <div class="flower">✿</div>
@@ -18,16 +25,10 @@
             
             <div class="currentpage">MY DIGITAL GREENHOUSE</div>
         </div>
-            <div class="buttoncarelog"><a href="../carelog/carelog.html"><span class="text">Care Log</span></a></div>
+            <!-- <div class="buttoncarelog"><a href="../carelog/carelog.html"><span class="text">Care Log</span></a></div>
             <div class="buttonflowerfield"><a href="../flowerfield/flowerfield.html"><span class="text">Flower Field</span></a></div>
-            <div class="buttonecosystem"><a href="../ecosystem/ecosystem.html"><span class="text">Ecosystem</span></a></div>
+            <div class="buttonecosystem"><a href="../ecosystem/ecosystem.html"><span class="text">Ecosystem</span></a></div> -->
     </div>
-
-    <div class="musicnote">
-        ♫
-    </div>
-   
-    
 
     <div class="twocolumnflex">
         <div class="plantcolumn">
@@ -61,11 +62,10 @@
             
     </div>
 
-    <div class="stickyscroll">
-        
+    <div class="musicnote" id="musicToggle">
+        ♫
     </div>
-   
-    <!-- <img class="bambigrow1" src="images/bambi3.png" height="600px" width="auto"> -->
+
 
 </body>
 </html>
