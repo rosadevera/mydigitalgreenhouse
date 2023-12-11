@@ -5,7 +5,13 @@
     box-sizing: border-box;       
 }
 
-html, body { height: 4800px }
+img {
+    image-rendering: -webkit-crisp-edges;
+      image-rendering: -moz-crisp-edges;
+      image-rendering: crisp-edges;
+      image-rendering: pixelated;
+      -ms-interpolation-mode: nearest-neighbor;
+  }
 
 p{
     line-height: 20pt;
@@ -268,6 +274,9 @@ a {
 
 .grass {
     /* border: 1px solid black; */
+    position:absolute;
+    bottom: 70px;
+    left:70px;
     margin-bottom: 20px;
     color: #7BA362;
     font-family: Director-regular;
@@ -294,6 +303,24 @@ a {
       blink-caret .75s step-end infinite;
   }
 
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    width:500vw;
+    transform:rotate (90deg) translateY(-100vh);
+    transform-origin: top left;
+}
+
+.outerwrapper {
+    position:fixed;
+    width:100vw;
+    height: 100vh;
+    transform:rotate (-90deg) translateX(-100vh );
+    transform-origin: top left;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
 .sun {
     position:fixed;
     top:5vh;
@@ -301,61 +328,139 @@ a {
 }
 
 .bunny {
-    position:fixed;
-    bottom: 13vh;
-    left:55vw;
+    position:absolute;
+    bottom: 100px;
+    left: 140px;
 }
 
 .tulips {
-    position:fixed;
-    bottom: 13vh;
-    left:40vw;
+    position:absolute;
+    bottom: 100px;
+    left: 600px;
 }
 
 .rainbow {
-    position:fixed;
-    top:15vh;
-    left:70vw;
+    position: absolute;
+    top: 100px;
+    left: 700px;
 }
 
 .bee {
-    position:fixed;
-    top:40vh;
-    left:60vw;
+    position:absolute;
+    top: 200px;
+    left: 950px;
 }
 
 .butterfly {
-    position:fixed;
-    top:33vh;
-    left:33vw;
+    position:absolute;
+    top: 300px;
+    left: 900px;
 }
 
 .bambi {
-    position:fixed;
-    top:28.7vh;
-    left:15vw;
-}
-
-.pilea {
-    position:fixed;
-    top:30vh;
-    left:30vw;
-}
-
-.rosa {
-    position:fixed;
-    top:60vh;
-    left:50vw;
-}
-
-.pothosgreenhouse {
-    position:fixed;
-    top:30vh;
-    left:44vw;
+    position:absolute;
+    bottom: 104px;
+    left: 900px;
 }
 
 .sonny {
-    position:fixed;
-    bottom: 13vh;
-    left:72vw;
+    position:absolute;
+    bottom: 100px;
+    left: 1800px;
+}
+
+.rosa {
+    position:absolute;
+    bottom: 90px;
+    left: 2000px;
+}
+
+.tree1 {
+    position:absolute;
+    bottom: 102px;
+    left: 300px;
+}
+
+.bigtree {
+    position:absolute;
+    bottom: 75px;
+    left: 2800px;
+}
+
+.pilea {
+    position:absolute;
+    bottom: 40px;
+    left: 1900px;
+}
+
+.deer {
+    position:absolute;
+    bottom: 102px;
+    left: 3400px;
+}
+
+.dove {
+    position:absolute;
+    top: 95px;
+    left: 2600px;
+}
+
+.butterflies {
+    position:absolute;
+    bottom: 302px;
+    left: 2100px;
+}
+
+.bushes1 {
+    position:absolute;
+    bottom: 104px;
+    left: 2450px;
+}
+
+.bushes2 {
+    position:absolute;
+    bottom: 104px;
+    left: 850px;
+}
+
+.bunny2 {
+    position:absolute;
+    bottom: 100px;
+    left: 2700px;
+}
+
+.flowers {
+    position:absolute;
+    bottom: 100px;
+    left: 1400px;
+}
+
+.tree5 {
+    position:absolute;
+    bottom: 104px;
+    left: 2400px;
+}
+
+.pothos {
+    position:absolute;
+    bottom: -10px;
+    left: 3600px;
+}
+
+.cloud1 {
+    position:absolute;
+    top: 20px;
+    left: 1200px;
+}
+
+.cloud2 {
+    position:absolute;
+    top: 170px;
+    left: 2000px;
+}
+
+.birds {
+    position:absolute;
+    top: 202px;
+    left: 3600px;
 }

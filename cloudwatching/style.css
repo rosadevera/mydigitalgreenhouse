@@ -5,6 +5,22 @@
     box-sizing: border-box;       
 }
 
+body {
+  background-repeat: no-repeat;
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 2;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+   }
+}
+
 @font-face {
     font-family: Director-regular;
     src: url(../Director-Regular.otf);
@@ -212,7 +228,7 @@ a {
   }
 
   .text1 {
-    animation-delay: 0s; /* No delay for the first text */
+    animation-delay: 1s; /* No delay for the first text */
   }
 
   .text2 {
@@ -271,7 +287,7 @@ a {
 
   #customMovingTextContainer {
     position: absolute;
-    top: 100px;
+    top: 150px;
     left: -100px;
   }
 
