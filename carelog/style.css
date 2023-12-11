@@ -310,6 +310,7 @@ a {
     width: 100%;
     /* margin: auto;  */
     padding:10px;
+    text-align: center;
 }
 
 .notifcations1 {
@@ -369,4 +370,3 @@ a {
     font-family: Director-bold;
     font-size: 8pt;
 }
-

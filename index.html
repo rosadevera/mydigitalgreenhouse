@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Digital Greenhouse</title>
+    <style>
+        @font-face {
+            font-family: Director-regular;
+            src: url(Director-Regular.otf);
+        }
+
+        @font-face {
+            font-family: Director-bold;
+            src: url(Director-bold.otf);
+        }
+
+        #text-container {
+            height: 65px;
+            width: fit-content;
+            color: #7BA362;
+            text-align: center;
+            padding: 17px;
+            margin: auto;
+            margin-top: 40vh;
+            font-family: Director-regular;
+            font-size: 24pt;
+            font-weight: 700;
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Nanum+Myeongjo:wght@400;700&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <div id="text-container">
+        <p id="sentence1"></p>
+        <p id="sentence2"></p>
+      </div>
+    
+      <script>
+        $(document).ready(function() {
+          const sentences = [
+            "welcome to my digital greenhouse!",
+            "click to enter"
+          ];
+    
+          let currentSentenceIndex = 0;
+          let currentCharIndex = 0;
+    
+          function typeSentence() {
+            const currentSentence = sentences[currentSentenceIndex];
+            const currentSentenceElement = $(`#sentence${currentSentenceIndex + 1}`);
+    
+            if (currentCharIndex < currentSentence.length) {
+              currentSentenceElement.text(currentSentence.substring(0, currentCharIndex + 1));
+              currentCharIndex++;
+              setTimeout(typeSentence, 75); // Adjust typing speed
+            } else {
+              // After typing the first sentence, stay visible for 3 seconds before disappearing
+              if (currentSentenceIndex === 0) {
+                setTimeout(function() {
+                  currentSentenceElement.fadeOut(50, function() {
+                    currentSentenceIndex++;
+                    currentCharIndex = 0;
+                    currentSentenceElement.text(""); // Clear sentence 1
+                    currentSentenceElement.fadeIn(500);
+                    setTimeout(typeSentence, 1000); // Delay before typing the second sentence
+                  });
+                }, 2000); // Stay visible for 3 seconds
+              }
+            }
+          }
+    
+          // Start typing animation with an initial delay of 1 second for sentence 1
+            setTimeout(typeSentence, 1500);
+
+            // Click event handler for the link in sentence 2
+            $(document).on('click', '#sentence2', function() {
+                window.location.href = 'greenhouse.html';
+            });
+        });
+      </script>
+
+</body>
+</html>
