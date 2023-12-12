@@ -305,3 +305,72 @@ a {
   /* border: 1px solid black; */
   }
   
+  
+
+  @media screen and (max-width: 450px) {
+
+    .quotebox {
+      width: 80vw;
+      /* border: 1px solid black; */
+      left: 2vw;
+    }
+
+    .quote{
+      color: white;
+      text-align: center;
+      white-space: normal;
+      font-family: Director-regular;
+
+      font-size: 12pt;
+      overflow: hidden; /* Ensures the content is not revealed until the animation */
+      margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+      letter-spacing: .15em; /* Adjust as needed */
+      animation: 
+        typing 3.5s steps(40, end),
+        blink-caret .75s step-end infinite;
+    }
+
+    
+    .entry {
+      position: absolute;
+      bottom:12vh;
+      left: 15vw;
+      height: fit-content;
+      font-family: Standard-book;
+      font-size: 10pt;
+      line-height: 18pt;
+      color:white;
+      width: 70vw;
+      align-items: center;
+      text-align: center;
+      padding: 10px;
+      /* border: 1px solid black; */
+      }
+
+    .musicnote {
+      position: fixed;
+      color: white;
+      bottom: 2vh;
+      left:5vw;
+      font-size: 20pt;
+      transition: cubic-bezier(0.165, 0.84, 0.44, 1)0.5s;
+      /* background-color: white; */
+    }
+    
+    .musicnote:hover {
+      transform:scale(1.05);
+      filter: drop-shadow(0px 0px 2px #616161);
+      cursor: pointer;
+    }
+    
+    .musicnote.paused {
+      position: fixed;
+      bottom: 2vh;
+      left:2vw;
+      font-size: 20pt;
+      color: #c7c7c7;
+      /* background-color: white; */
+    }
+    
+
+}
