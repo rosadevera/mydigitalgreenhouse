@@ -5,8 +5,6 @@
     box-sizing: border-box;       
 }
 
-html, body { height: 4800px }
-
 p{
     line-height: 20pt;
 }
@@ -245,24 +243,20 @@ img{
 
 .twocolumnflex { 
     position:absolute;
-    left: 10vw;
     display: flex; 
     flex-direction: row; 
 } 
 
 .plantcolumn { 
     width: 46%; 
-    height: 100vh; 
+    height: 100vh;
     text-align: right; 
     color: white;
-    /* border: 1px solid black; */
 } 
 
 .plantpic {
     position:fixed;
-    left: 10vw;
-    top: 3vh;
-    /* border: 1px solid black; */
+    left: 9vw;
 }
 
 /* .plantpic:hover {
@@ -279,9 +273,10 @@ img{
     font-size: 10pt;
     line-height: 16pt;
     padding-top: 10vh;
-    padding-left: 10vw;
+    padding-left: 15vw;
     padding-right: 10vw;
     padding-bottom: 49vh;
+    /* background-color:coral; */
 } 
 
 .plantname{
@@ -313,27 +308,43 @@ img{
 .entry {
     /* padding-left: 150px;
     padding-right: 150px; */
-    margin-bottom: 40vh;
+    margin-bottom: 1000px;
+    /* background-color:coral; */
 }
 
-.stickyscroll {
-    position:absolute;
-    top: 1200px
-}
 
-.bambi2sticky {
-    position: relative;
-    top:600px;
-    left: -150px;
-}
+#popup-image {
+    position: fixed;
+    top:0vh;
+    float: right;
+    transform: translate(160%,-30%);
+    opacity: 0;
+    transition: opacity 0.25xs ease-in-out;
+    
+  }
 
-.rosa2sticky {
-    position: relative;
-    top:1500px;
-}
+  #popup-image2 {
+    position: fixed;
+    top:10vh;
+    transform: translate(-20%);
+    opacity: 0;
+    transition: opacity 0.25xs ease-in-out;
+  }
 
-.pothos2sticky {
-    position: relative;
-    top:2300px;
-    left: -150px;
-}
+  #popup-image3 {
+    position: fixed;
+    bottom:0vh;
+    left:20vw;
+    transform: translate(0%,50%);
+    opacity: 0;
+    transition: opacity 0.25xs ease-in-out;
+  }
+
+  #popup-image4 {
+    position: fixed;
+    right:0vw;
+    top:35vh;
+    /* transform: translate(0%,50%); */
+    opacity: 0;
+    transition: opacity 0.25xs ease-in-out;
+  }
