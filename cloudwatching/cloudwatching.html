@@ -40,6 +40,11 @@
         align-items: center;
         justify-content: center;
     }
+
+    button:hover {
+    cursor:pointer;
+    }
+    
     </style>
 </head>
 <body>
@@ -98,7 +103,7 @@
     <div class="entry">
     <form id="userInputForm">
         <label for="userText">what's on your mind? </label>
-        <input type="text" id="userText" name="userText">
+        <input type="text" id="userText" name="userText" autocomplete="off">
         <button type="button" onclick="addUserText()">release</button>
     </form>
     </div>

@@ -1,3 +1,12 @@
+$(document).ready(function(){
+  $("#userText").keypress(function(event) {
+      if (event.keyCode === 13) { // 13 corresponds to the Enter key
+          event.preventDefault(); // Prevent form submission
+          addUserText(); // Call the function to add user text
+      }
+  });
+});
+
 function addUserText() {
   var userText = $("#userText").val();
   if (userText.trim() !== "") {
